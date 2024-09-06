@@ -65,8 +65,8 @@ body{
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover, 
-.navbar a.active{
+/* .navbar a:active,  */
+.navbar a:hover{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
@@ -406,4 +406,44 @@ span{
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+}
+
+.contact {
+    background-color: var(--bg-color);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background:var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
 }
