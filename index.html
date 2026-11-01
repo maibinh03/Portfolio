@@ -1,178 +1,592 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Mai Thanh Bình">
+    <meta name="description" content="Mai Thanh Bình - Software Developer Portfolio">
+
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <title>Boong Portfolio</title>
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mai Thanh Bình | Software Developer</title>
 </head>
+
 <body>
+
+    <!-- Header -->
     <header class="header">
         <a href="#home" class="logo">Bình <span>Boong</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home" class="active">Trang chủ</a>
-            <a href="#education">Học vấn</a>
-            <a href="#skills">Kĩ năng</a>
-            <a href="#contact">Liên hệ</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#career">Career</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
+
+    <!-- Home -->
     <section class="home" id="home">
+
         <div class="home-content">
-            <h1>Xin chào, <span>Bình</span> đây!</h1>
-            <h3 class="text-animation">Mình là 1 <span></span></h3>
-            <p>Tớ là Mai Thanh Bình, bạn bè hay gọi tớ là Boong.
-                Nhạc hay và đồ ăn vặt là "hành trang fix bug" ưa thích, hihi.
-                Nếu được đi du lịch, tớ muốn được ngắm núi Vinicunca, Peru.
+
+            <h1>Hi, I'm <span>Bình</span></h1>
+
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+
+            <p>
+                I'm Mai Thanh Bình, a Software Developer with a background
+                in Information Technology.
+
+                I'm passionate about building software products,
+                solving technical problems, and exploring modern technologies.
+
+                My interests include Backend Development, Full-Stack Engineering,
+                and AI-powered applications. I enjoy learning through
+                hands-on projects and continuously improving my engineering skills.
             </p>
+
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/maibinh03"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/_boong03_/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100057233990414"><i class='bx bxl-facebook'></i></a>
+
+                <a href="https://github.com/maibinh03"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+
             </div>
+
             <div class="btn-group">
-                <a href="#" class="btn"> Tải CV </a>
-                <a href="#contact" class="btn"> Liên hệ</a>
+
+                <a href="assets/Mai-Thanh-Binh-CV.pdf"
+                   class="btn"
+                   download>
+                    Download CV
+                </a>
+
+                <a href="#contact" class="btn">
+                    Contact Me
+                </a>
+
             </div>
+
         </div>
+
         <div class="home-img">
-            <img src="img/image.jpg" alt="">
+            <img src="img/image.jpg" alt="Mai Thanh Bình">
         </div>
+
     </section>
-    <section class="education" id="education">
-        <h2 class="heading">Học vấn</h2>
+
+
+    <!-- Career Journey -->
+    <section class="education" id="career">
+
+        <h2 class="heading">Career <span>Journey</span></h2>
+
         <div class="timeline-items">
+
+            <!-- Self-taught -->
             <div class="timeline-item">
+
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2014 - 2018</div>
-                    <div class="timeline-content">
-                        <h3>Trung học cơ sở</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Molestiae debitis quos tempora laboriosam nihil ipsum, 
-                            minus aperiam delectus, culpa quam, repudiandae tenetur at rerum reprehenderit. 
-                            Natus impedit iure cupiditate quas?</p>
-                    </div>
+
+                <div class="timeline-date">2016 - Present</div>
+
+                <div class="timeline-content">
+
+                    <h3>Self-taught Developer</h3>
+
+                    <p>
+                        Started learning programming independently in 2016
+                        through online resources, technical documentation,
+                        and hands-on experimentation.
+
+                        Gradually developed programming knowledge,
+                        problem-solving skills, and an interest in
+                        software development through continuous self-learning
+                        and personal projects.
+                    </p>
+
+                </div>
+
             </div>
-    
+
+
+            <!-- University -->
             <div class="timeline-item">
+
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2021</div>
-                    <div class="timeline-content">
-                        <h3>Trung học phổ thông</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Molestiae debitis quos tempora laboriosam nihil ipsum, 
-                            minus aperiam delectus, culpa quam, repudiandae tenetur at rerum reprehenderit. 
-                            Natus impedit iure cupiditate quas?</p>
-                    </div>
+
+                <div class="timeline-date">2021 - 2026</div>
+
+                <div class="timeline-content">
+
+                    <h3>East Asia University of Technology</h3>
+
+                    <p>
+                        <strong>Bachelor's Degree in Information Technology</strong>
+                        <br><br>
+
+                        Studied core computer science and software engineering
+                        concepts, including programming, object-oriented
+                        programming, data structures, database systems,
+                        and software development.
+
+                        Applied academic knowledge through coursework
+                        and practical software projects.
+                    </p>
+
+                </div>
+
             </div>
-    
+
+
+            <!-- Hoc Mai -->
             <div class="timeline-item">
+
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - Nay</div>
-                    <div class="timeline-content">
-                        <h3>Đại học</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Molestiae debitis quos tempora laboriosam nihil ipsum, 
-                            minus aperiam delectus, culpa quam, repudiandae tenetur at rerum reprehenderit. 
-                            Natus impedit iure cupiditate quas?</p>
-                    </div>
+
+                <div class="timeline-date">[Internship Period]</div>
+
+                <div class="timeline-content">
+
+                    <h3>Học Mãi</h3>
+
+                    <p>
+                        <strong>Internship</strong>
+                        <br><br>
+
+                        Gained practical working experience in a professional
+                        environment, applying technical knowledge,
+                        collaborating with team members, and becoming
+                        familiar with real-world working processes.
+                    </p>
+
+                </div>
+
             </div>
+
+
+            <!-- El Ripley -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">[Project Period]</div>
+
+                <div class="timeline-content">
+
+                    <h3>El Ripley</h3>
+
+                    <p>
+                        <strong>Software Developer | Project Contributor</strong>
+                        <br><br>
+
+                        Contributed to the development of an AI-powered
+                        SaaS platform for Facebook Page customer support.
+
+                        Gained exposure to full-stack development,
+                        third-party API integrations, database systems,
+                        real-time communication, and AI-powered features
+                        including Retrieval-Augmented Generation (RAG).
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Freelance -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">[Freelance Period] - Present</div>
+
+                <div class="timeline-content">
+
+                    <h3>Freelance Software Developer</h3>
+
+                    <p>
+                        Working independently on software development
+                        projects, exploring emerging technologies,
+                        and building practical applications.
+
+                        Focusing on backend systems, full-stack development,
+                        mobile applications, and AI-powered solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-        
-        
+
     </section>
+
+
+    <!-- Skills -->
     <section class="skills" id="skills">
-        <h2 class="heading">Kĩ năng</h2>
+
+        <h2 class="heading">Technical <span>Skills</span></h2>
+
         <div class="skills-container">
+
+            <!-- Programming Languages -->
             <div class="skills-box">
+
                 <div class="skill-info">
-                    <h4>Python</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nulla quis dignissimos eligendi error fuga libero vel est? 
-                        Quis saepe voluptates libero asperiores, est veritatis officiis qui blanditiis. 
-                        Laudantium, minus modi?</p>
+
+                    <h4>Programming Languages</h4>
+
+                    <p>
+                        Python, JavaScript, TypeScript, Java, PHP, Go, SQL,
+                        and basic Rust.
+
+                        Familiar with Object-Oriented Programming (OOP),
+                        data structures, algorithms, and problem-solving.
+                    </p>
+
                 </div>
+
             </div>
+
+
+            <!-- Frameworks & Platforms -->
             <div class="skills-box">
+
                 <div class="skill-info">
-                    <h4>Flutter</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nulla quis dignissimos eligendi error fuga libero vel est? 
-                        Quis saepe voluptates libero asperiores, est veritatis officiis qui blanditiis. 
-                        Laudantium, minus modi?</p>
+
+                    <h4>Frameworks & Platforms</h4>
+
+                    <p>
+                        FastAPI, React, Node.js, Flutter, Android SDK,
+                        and Firebase.
+
+                        Experience with RESTful API development,
+                        application architecture, and cross-platform
+                        application development.
+                    </p>
+
                 </div>
+
             </div>
+
+
+            <!-- Databases -->
             <div class="skills-box">
+
                 <div class="skill-info">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nulla quis dignissimos eligendi error fuga libero vel est? 
-                        Quis saepe voluptates libero asperiores, est veritatis officiis qui blanditiis. 
-                        Laudantium, minus modi?</p>
+
+                    <h4>Databases & Storage</h4>
+
+                    <p>
+                        PostgreSQL, MySQL, SQLite, MongoDB, Redis,
+                        Firebase Firestore, Qdrant, and Neo4j.
+
+                        Familiar with relational database design,
+                        SQL queries, caching, and vector search.
+                    </p>
+
                 </div>
+
             </div>
+
+
+            <!-- Others -->
             <div class="skills-box">
+
                 <div class="skill-info">
-                    <h4>... và nhiều kĩ năng khác. </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nulla quis dignissimos eligendi error fuga libero vel est? 
-                        Quis saepe voluptates libero asperiores, est veritatis officiis qui blanditiis. 
-                        Laudantium, minus modi?</p>
+
+                    <h4>Tools & Technologies</h4>
+
+                    <p>
+                        Git, GitHub, Docker, REST API, WebSocket,
+                        Linux, AWS S3, and CI/CD fundamentals.
+
+                        Interested in AI integration, LLM APIs,
+                        RAG, AI Agents, and Model Context Protocol (MCP).
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
+
+    <!-- Projects -->
+    <section class="skills" id="projects">
+
+        <h2 class="heading">Featured <span>Projects</span></h2>
+
+        <div class="skills-container">
+
+
+            <!-- El Ripley -->
+            <div class="skills-box">
+
+                <div class="skill-info">
+
+                    <h4>El Ripley - AI Customer Support SaaS</h4>
+
+                    <p>
+                        <strong>
+                            FastAPI | React | TypeScript | PostgreSQL |
+                            Redis | MongoDB | Qdrant | AWS S3
+                        </strong>
+
+                        <br><br>
+
+                        Contributed to the development of a SaaS platform
+                        for managing and automating customer support
+                        on Facebook Pages.
+
+                        The platform integrates Facebook Graph API,
+                        real-time communication, AI-powered responses,
+                        and Retrieval-Augmented Generation (RAG)
+                        to improve customer support workflows.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Shortcut Suggestion -->
+            <div class="skills-box">
+
+                <div class="skill-info">
+
+                    <h4>Shortcut Suggestion</h4>
+
+                    <p>
+                        <strong>
+                            Python | NLP | Machine Learning
+                        </strong>
+
+                        <br><br>
+
+                        Developed a command shortcut suggestion tool
+                        that helps users discover relevant commands
+                        through natural language descriptions.
+
+                        Implemented a text processing pipeline,
+                        sentence encoding, and classification mechanisms
+                        to match user queries with predefined commands.
+                    </p>
+
+                    <a href="https://github.com/maibinh03/shortcut_suggestion"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub
+                        <i class="bx bx-link-external"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Boong2 -->
+            <div class="skills-box">
+
+                <div class="skill-info">
+
+                    <h4>Boong2 - Real-time Chat Application</h4>
+
+                    <p>
+                        <strong>
+                            Flutter | Dart | Firebase | Riverpod
+                        </strong>
+
+                        <br><br>
+
+                        Developed a mobile chat application supporting
+                        user authentication, profile management,
+                        and real-time messaging.
+
+                        Integrated Firebase Authentication
+                        and Cloud Firestore for user and message
+                        management, with Riverpod for state management.
+
+                        Implemented friendship features and
+                        real-time conversation workflows.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Mobile Store Management -->
+            <div class="skills-box">
+
+                <div class="skill-info">
+
+                    <h4>Mobile Store Management</h4>
+
+                    <p>
+                        <strong>
+                            PHP | MySQL | MVC | PHPUnit | Selenium
+                        </strong>
+
+                        <br><br>
+
+                        Developed a web application for managing
+                        mobile phone store operations, including
+                        product management, shopping carts,
+                        checkout, orders, and user management.
+
+                        Implemented authentication, inventory validation,
+                        order processing, and payment callbacks.
+
+                        Applied MVC architecture and performed
+                        testing with PHPUnit and Selenium.
+                    </p>
+
+                    <a href="https://github.com/maibinh03/MobileStoreManagement"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub
+                        <i class="bx bx-link-external"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
     <section class="contact" id="contact">
-        <h2 class="heading">Liên hệ <span>tôi</span></h2>
-        <form action="">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Họ và tên">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Số điện thoại">
-                    <input type="text" placeholder="Tiêu đề">
-                </div>
-            </div>
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tin nhắn của bạn"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
-    <footer class="footer">
-        <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/maibinh03"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/_boong03_/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100057233990414"><i class='bx bxl-facebook'></i></a>
-        </div>
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#">About Me</a>
-            </li>
-            <li>
-                <a href="#">Thông tin liên lạc</a>
-            </li>
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <p class="copyright">
-                ©Mai Thanh Bình | All rights reserved
+
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-content">
+
+            <p>
+                I'm open to discussing software development opportunities,
+                collaborating on interesting projects, and connecting
+                with people in the technology community.
             </p>
+
+            <form class="contact-form" id="contact-form">
+                <div class="input-group">
+                    <label for="contact-name">Your name</label>
+                    <input
+                        id="contact-name"
+                        name="name"
+                        type="text"
+                        autocomplete="name"
+                        maxlength="100"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="contact-email">Your email</label>
+                    <input
+                        id="contact-email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        maxlength="254"
+                        required>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="contact-subject">Subject</label>
+                    <input
+                        id="contact-subject"
+                        name="subject"
+                        type="text"
+                        maxlength="150"
+                        required>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="contact-message">Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="6"
+                        maxlength="5000"
+                        required></textarea>
+                </div>
+
+                <button class="btn" type="submit">Send message</button>
+                <p class="contact-note" aria-live="polite">
+                    Submitting opens your email app with the message ready to send.
+                    If it doesn't open,
+                    <a href="mailto:mthanhbinh2003@gmail.com">email me directly</a>.
+                </p>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="social">
+
+            <a href="https://github.com/maibinh03"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="bx bxl-github"></i>
+            </a>
+
+        </div>
+
+        <ul class="list">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#career">Career</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
         </ul>
+
+        <p class="copyright">
+            © 2026 Mai Thanh Bình | All Rights Reserved
+        </p>
+
     </footer>
+
+
+    <script src="script/script.js"></script>
+
 </body>
-<script src="script/script.js"></script>
 </html>

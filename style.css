@@ -71,6 +71,11 @@ body{
     border-bottom: 3px solid var(--main-color);
 }
 
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--main-color);
@@ -222,9 +227,9 @@ span{
 }
 
 .text-animation span::before{
-    content: "fullstack Developer";
+    content: "Backend Developer";
     color: var(--main-color);
-    animation: words 20s infinite
+    animation: words 16s infinite;
 }
 
 .text-animation span::after{
@@ -235,7 +240,7 @@ span{
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(15) infinite;
+    animation: cursor 0.6s infinite, typing 16s steps(24) infinite;
 }
 
 @keyframes cursor {
@@ -243,16 +248,15 @@ span{
 }
 
 @keyframes words {
-    0%, 20%{content: "fullstack developer.";}
-    21%, 40%{content: "software tester.";}
-    41%, 60%{content: "photoshoper."}
-    61%, 80%{content: "content creator.";}
-    81%, 100%{content: "video editor.";}
+    0%, 25%{content: "Backend Developer";}
+    26%, 50%{content: "Full-Stack Developer";}
+    51%, 75%{content: "AI Application Developer";}
+    76%, 100%{content: "Software Engineer";}
 }
 
 @keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {width: 0;}
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {width: calc(100% + 8px);}
+    10%, 15%, 35%, 40%, 60%, 65%, 85%, 90% {width: 0;}
+    5%, 25%, 30%, 50%, 55%, 75%, 80%, 100% {width: calc(100% + 8px);}
 }
 
 .heading{
@@ -357,7 +361,7 @@ span{
 /* Kĩ năng */
 .skills{
     background: var(--bg-color);
-    color: black;
+    color: var(--text-color);
 }
 
 .skills h2 {
@@ -374,7 +378,8 @@ span{
 
 .skills-box{
     background-color: var(--main-color);
-    height: 300px;
+    height: auto;
+    min-height: 30rem;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -386,12 +391,11 @@ span{
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.skill-box .skills-info{
+.skills-box .skill-info{
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: baseline;
     padding: 5rem 5rem;
 }
@@ -403,9 +407,12 @@ span{
 .skill-info p{
     font-size: 1.6rem;
     font-weight: 600;
-    max-height: 100px;
     line-height: 1.7;
     margin: auto;
+}
+
+.skills-box:hover .skill-info a{
+    color: var(--bg-color);
 }
 
 .contact {
@@ -417,33 +424,308 @@ span{
     color: white;
 }
 
-.contact form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
+.contact-content {
+    max-width: 80rem;
+    margin: 0 auto;
     text-align: center;
 }
 
-.contact form .input-box {
+.contact-content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 4rem auto 0;
+    text-align: left;
+}
+
+.contact-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-form .full-width,
+.contact-form button,
+.contact-form .contact-note {
+    grid-column: 1 / -1;
+}
+
+.contact-form label {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.5rem 1.8rem;
+    border: 2px solid var(--main-color);
+    border-radius: 1.2rem;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    font: inherit;
+    font-size: 1.6rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 16rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--text-color);
+}
+
+.contact-form button {
+    justify-self: center;
+    color: var(--text-color);
+}
+
+.contact-form .contact-note {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.contact-form .contact-note a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.contact-form .contact-note a:hover {
+    color: var(--text-color);
+}
+
+.skill-info a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.skill-info a:hover {
+    color: var(--bg-color);
+}
+
+.footer {
+    padding: 4rem 12% 2rem;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+
+.footer .social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1rem 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+    color: var(--text-color);
+    background: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    transform: translateY(-3px);
+}
+
+.footer .list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 0 2rem;
+    list-style: none;
 }
 
-.contact form .input-box input, .contact form textarea {
-    width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
+.footer .list a {
     color: var(--text-color);
-    background:var(--bg-color);
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
+    font-size: 1.6rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
 }
 
-.contact form .btn {
-    margin-top: 2rem;
+.footer .list a:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.copyright {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+
+    section {
+        padding: 10rem 5%;
+    }
+
+    .home {
+        gap: 5rem;
+    }
+
+    .home-content h1 {
+        font-size: 6rem;
+    }
+
+    .home-img img {
+        width: 36vw;
+        height: 36vw;
+    }
+
+    .footer {
+        padding: 4rem 5% 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 1rem 5%;
+        background: rgba(59, 38, 33, 0.98);
+        border-top: 1px solid rgba(240, 234, 231, 0.15);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .home-content {
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .home-content h1 {
+        font-size: 6rem;
+    }
+
+    .home-content p {
+        max-width: 65rem;
+    }
+
+    .home-img img {
+        top: 0;
+        width: 48vw;
+        height: 48vw;
+    }
+
+    .timeline-items::before {
+        left: 9px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-right: 0;
+        padding-left: 4rem;
+        text-align: left;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-box {
+        height: auto;
+        min-height: 24rem;
+    }
+
+    .skill-info {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content h3,
+    .text-animation {
+        font-size: 2.6rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .btn-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 5rem;
+    }
+
+    .timeline-content {
+        padding: 2.5rem;
+    }
+
+    .skill-info h4 {
+        font-size: 2.4rem;
+    }
+
+    .footer .list {
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form .input-group,
+    .contact-form button,
+    .contact-form .contact-note {
+        grid-column: 1;
+    }
 }
